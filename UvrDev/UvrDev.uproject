@@ -1,0 +1,19 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "{CFEF2BDF-4E87-04AC-F460-9DAD68C0B4A8}",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "UvrDev",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine"
+			]
+		}
+	],
+	"TargetPlatforms": [
+		"WindowsNoEditor"
+	]
+}
