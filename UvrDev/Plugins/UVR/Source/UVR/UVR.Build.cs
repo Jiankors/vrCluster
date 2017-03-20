@@ -26,7 +26,6 @@ public class UVR : ModuleRules
 		PublicIncludePaths.AddRange(
 			new string[] {
 				"UVR/Public",
-				"../../../../Source/Runtime/OpenGLDrv/Public",
 				// ... add public include paths required here ...
 			}
 			);
@@ -51,7 +50,15 @@ public class UVR : ModuleRules
 				"Core",
 				"CoreUObject",
 				"Engine",
-				"InputCore",
+				"InputCore"
+				// ... add other public dependencies that you statically link with here ...
+			}
+			);
+
+
+		PrivateDependencyModuleNames.AddRange(
+			new string[]
+			{
 				"InputDevice",
 				"Networking",
 				"OpenGLDrv", // << only pub/priv or pub+priv
@@ -62,15 +69,6 @@ public class UVR : ModuleRules
 				"Slate",
 				"SlateCore",
 				"Sockets"
-				// ... add other public dependencies that you statically link with here ...
-			}
-			);
-
-
-		PrivateDependencyModuleNames.AddRange(
-			new string[]
-			{
-				"OpenGLDrv"
 				// ... add private dependencies that you statically link with here ...
 			}
 			);

@@ -6,7 +6,6 @@
 
 UTestPosRotRandom::UTestPosRotRandom()
 {
-	bWantsBeginPlay = true;
 	PrimaryComponentTick.bCanEverTick = true;
 
 	// ...
